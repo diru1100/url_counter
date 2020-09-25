@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Url</th>
+        <th scope="col">Count</th>        
+      </tr>
+    </thead>
+    <tbody>
+        {% for url_detail in url_details %}
+        <tr>
+            <th scope="row"> {{ url_detail.id }} </th>
+            <td><a href = {{ url_detail }}>{{ url_detail.url }}</a></td>
+            <td>{{ url_detail.count }}</td>        
+        </tr>     
+        {% endfor %} 
+    </tbody>
+</table>
+
+{% endblock %}
