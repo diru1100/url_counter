@@ -13,7 +13,7 @@
         {% for url_detail in url_details %}
         <tr>
             <th scope="row"> {{ url_detail.id }} </th>
-            <td><a href = {{ url_detail }}>{{ url_detail.url }}</a></td>
+            <td><a href = "{{ url_detail.url }}">{{ url_detail.url }}</a></td>
             <td>{{ url_detail.count }}</td>        
         </tr>     
         {% endfor %} 
