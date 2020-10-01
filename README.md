@@ -13,3 +13,6 @@ Implement a job queue feature in a flask web app backed by a database.
 - After this you will be able to run the application at ```localhost:5000```
     - /url and / is used to submit url
     - /index is where we can see the urls with their respective count retrived from the database/
+
+- To run the tests
+    - Run the command ```pytest``` in root level folder to checkout test results.
